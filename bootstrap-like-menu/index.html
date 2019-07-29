@@ -1,0 +1,89 @@
+<html>
+
+<head>
+<style>
+div, .debug * {
+    border: 1px solid rgba(0,122,0,.3);
+}
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #777;
+}
+
+.logoWrapper {
+    float: left;
+}
+
+/*TODO How to make Project name middle-aligned vertically*/
+
+.menuL { float: left; }
+.menuR { float: right; }
+
+.menuWrapper {
+    border: 1px solid #e7e7e7;
+    overflow: auto; /* make parent tag having child total height ref. https://stackoverflow.com/a/4579553/248616*/
+    background: #f8f8f8;
+    border-radius: 4px;
+}
+
+.menuWrapper ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.menuWrapper ul li {
+    display: inline-block;
+    padding: 15px;
+}
+
+.menuWrapper ul li.active a {
+    color: #555;
+    background-color: #e7e7e7;
+    padding: 15px;
+}
+
+.menuWrapper ul li a:hover {
+    color: #333;
+}
+
+
+</style>
+</head>
+
+<body class="debug">
+
+<div class="menuWrapper">
+    <div class="logoWrapper">
+<!--        <img src="images/logo.png" >-->
+        <div class="logo">
+            <ul><li>Project Name</li></ul>
+        </div>
+    </div>
+    <div class="menuL">
+        <ul>
+            <li class="active"><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Contact</a></li>
+            <li><a>Dropdown</a></li>
+            <li>
+                <select>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </li>
+        </ul>
+    </div>
+    <div class="menuR">
+        <ul>
+            <li class="active"><a>Default</a></li>
+            <li><a>Static top</a></li>
+            <li><a>Fixed top</a></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
