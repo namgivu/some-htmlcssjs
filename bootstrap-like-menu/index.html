@@ -64,6 +64,9 @@ ul.dropdown-menu {
     border: 1px solid lightgrey;
     background: white;
     box-shadow: 2px 2px 11px lightgrey;
+
+    margin-top: 15px;
+    margin-left: -15px;
 }
 
 ul.dropdown-menu li {
@@ -103,6 +106,14 @@ ul.dropdown-menu li {
                     } else {
                         x.style.display = 'none';
                     }
+
+                    let y = document.querySelector('.dropdown');
+                    if (x.style.display === 'none') {
+                        y.style.background = '#f8f8f8';
+                    } else {
+                        y.style.background = '#e7e7e7';
+                    }
+
                 }
             </script>
         </ul>
