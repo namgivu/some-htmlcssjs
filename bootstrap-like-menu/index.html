@@ -60,12 +60,12 @@ body {
 ul.dropdown-menu {
     padding-left: 0px;
     position: absolute;
-    display: none;
 }
 
 ul.dropdown-menu li {
     display: block;
 }
+
 </style>
 </head>
 
@@ -83,14 +83,24 @@ ul.dropdown-menu li {
             <li class="active"><a>Home</a></li>
             <li><a>About</a></li>
             <li><a>Contact</a></li>
-            <li class="dropdown">
+            <li class="dropdown" onclick="menu_open()">
                 <a>Dropdown</a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu" style="display: none">
                     <li><a>Action</a></li>
                     <li><a>Another action</a></li>
                     <li><a>Something else here</a></li>
                 </ul>
             </li>
+            <script>
+                function menu_open() {
+                    let x = document.querySelector('.dropdown-menu');
+                    if (x.style.display === 'none') {
+                        x.style.display = 'block';
+                    } else {
+                        x.style.display = 'none';
+                    }
+                }
+            </script>
         </ul>
     </div>
     <div class="menuR">
