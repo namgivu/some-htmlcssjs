@@ -7,7 +7,7 @@
     <title>Happy-women day! - Tân's pick</title>
 
     <style>
-        body * { border: 1px solid rgba(0,122,0, .3); }
+        /*body * { border: 1px solid rgba(0,122,0, .3); }*/
 
         .content {
             border: 2px solid darkred;
@@ -21,12 +21,49 @@
         .content .col {
             display: inline-block;
         }
+
+        .row1 .banner, .row1 .date {
+            display: inline-block;
+        }
+
+        .row1a .banner, .row1a .date, .row1a .pre-banner {
+            display: inline-block;
+        }
+
+        .row1a .pre-banner {
+            width: 33%;
+        }
+        .row1a .banner {
+            width: 33%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .row1a .date .day {
+            font-size: 30px; color: #453f3f; line-height: 1;
+        }
+        .row1a .date {
+            margin-left: 300px;
+            color: #686868; font-size: 20px; font-family: 'open_sansregular', sans-serif;
+        }
     </style>
 
 </head>
 
 <body>
-    <div>Women's Day</div>
+    <div class="row1a">
+        <div class="pre-banner"></div>
+
+        <div class="banner">
+            <img src="images/logo.png">
+        </div>
+
+        <div class="date">
+            <span class="day">
+                <strong>20<sup>th</sup></strong>
+            </span>Oct, 2019
+        </div>
+    </div>
+
     <div>Menu</div>
 
     <div class="content">
