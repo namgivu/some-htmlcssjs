@@ -18,3 +18,7 @@ https://www.womensdaycelebration.com/messages-for-womens-day.html?fbclid=IwAR3XW
 
 Phat's pick
 https://www.pinterest.com/pin/465841155206021501/?nic=1&fbclid=IwAR3vJZYE0APluInb1I4brk74sNRGbB1r48xavSS2nwymZdj-lCGMVPWWWE4
+
+
+# day 3rd
+some w2school tutorial
