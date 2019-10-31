@@ -23,3 +23,6 @@ https://www.pinterest.com/pin/465841155206021501/?nic=1&fbclid=IwAR3vJZYE0APluIn
 # from day 3
 some w3school tutorial
 https://www.w3schools.com/html/
+
+css
+https://www.w3schools.com/html/html_css.asp
