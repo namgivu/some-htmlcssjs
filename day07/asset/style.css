@@ -1,3 +1,7 @@
 p {
     color: tomato;
 }
+
+p.vinh {
+    background-color: green;
+}
