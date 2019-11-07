@@ -24,10 +24,6 @@
             height: 8px;
         }
 
-        .switch2 {
-            display: none;
-        }
-
     </style>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -40,10 +36,6 @@
 
         <div class="sep"></div>
 
-        <button class="switch2 on" onclick="alert(122)">ON</button>
-        <br>
-        <button class="switch2 off" onclick="alert(333)">OFF</button>
-
         <button class="switch on">ON</button>
         <br>
         <button class="switch off">OFF</button>
@@ -51,11 +43,11 @@
 
     <script>
         $('.switch.on').click(function() {
-            bulb = $('.bulb').html('Light');
+            $('.bulb').html('Light');
         })
 
         $('.switch.off').click(function() {
-            bulb = $('.bulb').html('Dark');
+            $('.bulb').html('Dark');
         })
     </script>
 </body>
