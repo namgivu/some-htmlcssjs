@@ -51,11 +51,22 @@
     </div>
 
     <script>
+        $(document).ready(function(){
+            console.log('on ready');
+        });
+
+        $(function(){
+            $('.bulb').html('Dark');
+            $('.switch.off').prop('disabled', true);
+            $('.bulb_img.off').show();
+        });
+
+
         $('.switch.on').click(function() {
             $('.bulb').html('Light');
 
-            $('.bulb_img.on').show();
-            $('.bulb_img.off').hide();
+            $('.bulb_img.off').toggle();
+            $('.bulb_img.on').toggle();
 
             $('.switch.on' ).prop('disabled', true);
             $('.switch.off').prop('disabled', false);
@@ -64,8 +75,8 @@
         $('.switch.off').click(function() {
             $('.bulb').html('Dark');
 
-            $('.bulb_img.off').show();
-            $('.bulb_img.on').hide();
+            $('.bulb_img.off').toggle();
+            $('.bulb_img.on').toggle();
 
             $('.switch.off').prop('disabled', true);
             $('.switch.on' ).prop('disabled', false);
