@@ -24,6 +24,10 @@
             height: 8px;
         }
 
+        .bulb_img {
+            display: none;
+        }
+
     </style>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -39,15 +43,32 @@
         <button class="switch on">ON</button>
         <br>
         <button class="switch off">OFF</button>
+
+        <br>
+        <div class="sep"></div>
+        <img class="bulb_img on" src="https://www.w3schools.com/js/pic_bulbon.gif">
+        <img class="bulb_img off" src="https://www.w3schools.com/js/pic_bulboff.gif">
     </div>
 
     <script>
         $('.switch.on').click(function() {
             $('.bulb').html('Light');
+
+            $('.bulb_img.on').show();
+            $('.bulb_img.off').hide();
+
+            $('.switch.on' ).prop('disabled', true);
+            $('.switch.off').prop('disabled', false);
         })
 
         $('.switch.off').click(function() {
             $('.bulb').html('Dark');
+
+            $('.bulb_img.off').show();
+            $('.bulb_img.on').hide();
+
+            $('.switch.off').prop('disabled', true);
+            $('.switch.on' ).prop('disabled', false);
         })
     </script>
 </body>
