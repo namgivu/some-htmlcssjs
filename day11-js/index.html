@@ -35,6 +35,7 @@
 
 <body>
     <div class="wrapper">
+        <div class="bulb_text">BULB:</div>
         <div class="bulb">Light or Dark</div>
 
         <div class="sep"></div>
@@ -50,11 +51,11 @@
 
     <script>
         $('.switch.on').click(function() {
-            console.log('Light');
+            bulb = $('.bulb').html('Light');
         })
 
         $('.switch.off').click(function() {
-            console.log('Dark');
+            bulb = $('.bulb').html('Dark');
         })
     </script>
 </body>
