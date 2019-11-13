@@ -1,0 +1,43 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <div id="demo">abbccc</div>
+    <div id="demo2">xyy</div>
+
+    <script>
+        var x=5;
+        var y=10;
+        document.getElementById("demo").innerHTML = x+y;
+    </script>
+
+    <script>
+        var x = {
+            firstName: "John",
+            lastName: "Doe"
+        };
+        console.log(x);
+
+        console.log(x.firstName);
+        console.log(x["firstName"]);
+        console.log(x['firstName']);
+    </script>
+
+    <script>
+        var s='abb';
+        var t="abb";
+        console.log(s);
+        console.log(t);
+        console.log(s==t);
+        console.log(s===t);
+
+        var a=1;
+        var b="1";
+        console.log(a==b);
+        console.log(a===b);
+
+    </script>
+</body>
+</html>
