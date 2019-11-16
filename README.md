@@ -26,3 +26,13 @@ https://www.w3schools.com/html/
 
 css
 https://www.w3schools.com/html/html_css.asp
+
+# from day 15
+bootstrap component 
+https://getbootstrap.com/docs/4.3/components/alerts/
+
+bootstrap basic template
+https://getbootstrap.com/docs/3.4/getting-started/#template
+
+bootstrap grid layout generator
+https://getbootstrap.com/docs/4.3/layout/grid/
