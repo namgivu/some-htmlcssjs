@@ -8,10 +8,51 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
 
+    <style>
+        body * {
+            border: 1px solid rgba(0,122,0, .1);
+        }
+        .sep {
+            height: 66px;
+        }
+    </style>
 </head>
 
 <body>
     <div>bootstrap skeleton aka starter template</div>
+
+    <div class="sep"></div>
+
+    <!--grid demo-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                One of three columns
+            </div>
+            <div class="col-sm">
+                One of three columns
+            </div>
+            <div class="col-sm">
+                One of three columns
+            </div>
+        </div>
+    </div>
+
+    <div class="sep"></div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm">
+                One of three columns
+            </div>
+            <div class="col-sm">
+                One of three columns
+            </div>
+            <div class="col-sm">
+                One of three columns
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -22,5 +63,6 @@
 </html>
 
 <!--
-ref. https://getbootstrap.com/docs/4.4/getting-started/introduction/#quick-start
+skeleton ref. https://getbootstrap.com/docs/4.4/getting-started/introduction/#quick-start
+grid     ref. https://getbootstrap.com/docs/4.4/layout/grid/
 -->
