@@ -1,67 +1,101 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
-
     <style>
-        body * {
-            border: 1px solid rgba(0,122,0, .2);
+        body *{
+            border: 1px solid grey;
         }
-
-        .sep {
-            height: 66px;
+        .sep{
+            height: 30px;
         }
     </style>
 </head>
-
 <body>
-    <h3>Demo Bootstrap Grid</h3>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">abb</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2">
+            <img src="data:image/png;base64,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" width="100">
         </div>
+        <div class="col-sm-10">
+            <div> Fullstack Developer</div>
+            <div> Ha Dang Khoa</div>
+            <div> Etiam dolor ex, venenatis sed rutrum ac, rhoncus vel ligula. Vestibulum ac viverra urna. Cras vel turpis nibh. Nam vitae ultricies felis. Integer eget quam id elit blandit scelerisque. Suspendisse sagittis sollicitudin consectetur. Quisque dapibus felis sagittis velit elementum posuere. Integer ultrices ligula ac dolor aliquet viverra. Maecenas vehicula magna turpis, at euismod nibh egestas quis.</div>
 
-        <div class="row">
-            <div class="col-sm-6">abb</div>
-            <div class="col-sm-6">abb</div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-4">abb</div>
-            <div class="col-sm-4">abb</div>
-            <div class="col-sm-4">abb</div>
         </div>
     </div>
 
-    <div class="sep"></div>
+    <div class="row sep"></div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12">abb</div>
+    <div class="row">
+        <div class="col-sm-2 leftgroup">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">contact</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">Skillset1</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">Skillset2</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">hobbies</div>
+                </div>
+            </div>
         </div>
 
-        <div class="row">
-            <div class="col-sm-6">abb</div>
-            <div class="col-sm-6">abb</div>
-        </div>
+        <div class="col-sm-10 rightgroup">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">exp</div>
+                </div>
 
-        <div class="row">
-            <div class="col-sm-4">abb</div>
-            <div class="col-sm-4">abb</div>
-            <div class="col-sm-4">abb</div>
+                <div class="row sep"></div>
+
+                <div class="row">
+                    <div class="col-sm-10 edu " >
+                        <div class="container-fluid header">
+                            <div class="row">
+                                <div class="col-sm-12">eduheader</div>
+                            </div>
+                        </div>
+                        <div class="container-fluid eduitem1">
+                            <div class="row">
+                                <div class="col-sm-10">degree</div>
+                                <div class="col-sm-2">time</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div> school</div>
+                                    <div>detail</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid eduitem2">
+                            <div class="row">
+                                <div class="col-sm-10">degree</div>
+                                <div class="col-sm-2">time</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div> school</div>
+                                    <div>detail</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+</div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
 </body>
 </html>
