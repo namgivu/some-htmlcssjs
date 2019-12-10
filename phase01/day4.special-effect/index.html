@@ -76,15 +76,23 @@
     $(function() {
         $('.demo .progress').mouseenter(function(){
             var pb = $('.progress-bar', this);  // pb aka progress-bar
-            var new_p = '0%';  // new_p aka newprogress
-            pb.attr('aria-valuenow', new_p).css('width', new_p);  // update new progress value ref. https://stackoverflow.com/a/30640610/248616
+
+            var current_value=pb.attr('aria-valuenow'); pb.attr('mypb-valueorigin', current_value);  // mypb aka my_progress_bar
+            console.log(current_value);
+
+            var new_p = '0';  // new_p aka new_progress
+            pb.attr('aria-valuenow', new_p).css('width', new_p+'%');  // update new progress value ref. https://stackoverflow.com/a/30640610/248616
+
             console.log(1);
         });
-        $('.demo .progress').mouseleave(function(){
+        $('.demo .progress').mouseover(function(){
             var pb = $('.progress-bar', this);  // pb aka progress-bar
-            var new_p = '50%';  // new_p aka newprogress
-            pb.attr('aria-valuenow', new_p).css('width', new_p);  // update new progress value ref. https://stackoverflow.com/a/30640610/248616
-            console.log(22);
+            setTimeout(function(){
+                $('#someid').addClass("done");
+                var new_p = pb.attr('mypb-valueorigin');  // new_p aka new_progress
+                pb.attr('aria-valuenow', new_p).css('width', new_p+'%');  // update new progress value ref. https://stackoverflow.com/a/30640610/248616
+            }, 300);
+            console.log(1);
         });
     });
 </script>
