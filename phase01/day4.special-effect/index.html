@@ -75,9 +75,15 @@
 <script>
     $(function() {
         $('.demo .progress').mouseenter(function(){
+            var pb = $('.progress-bar', this);  // pb aka progress-bar
+            var new_p = '0%';  // new_p aka newprogress
+            pb.attr('aria-valuenow', new_p).css('width', new_p);  // update new progress value ref. https://stackoverflow.com/a/30640610/248616
             console.log(1);
         });
         $('.demo .progress').mouseleave(function(){
+            var pb = $('.progress-bar', this);  // pb aka progress-bar
+            var new_p = '50%';  // new_p aka newprogress
+            pb.attr('aria-valuenow', new_p).css('width', new_p);  // update new progress value ref. https://stackoverflow.com/a/30640610/248616
             console.log(22);
         });
     });
